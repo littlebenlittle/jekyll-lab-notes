@@ -1,0 +1,15 @@
+{
+  "name": "lab-notes",
+  "version": "1.0.0",
+  "description": "ben's lab notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css"
+  },
+  "author": "Ben Little",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.3"
+  }
+}

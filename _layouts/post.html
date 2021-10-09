@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div class="container is-max-desktop">
+
+	<article class="post h-entry" itemscope itemtype="https://schema.org/NoteDigitalDocument">
+
+		<header class="post-header block">
+			<h1 class="is-size-3 has-text-weight-semibold" itemprop="name headline">
+				{{ page.title | escape }}
+			</h1>
+			<p class="post-meta">
+			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+			{%- assign mdate = page.modified | date_to_xmlschema -%}
+			<time class="last-modified-date" datetime="{{ mdate }}" itemprop="dateModified">
+			Last Modified: {{ mdate | date: date_format }}
+			</time>
+			<br/>
+			<time class="posted-on-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+				Posted On: {{ page.date | date: date_format }}
+			</time>
+			{%- if page.author -%}
+				• {% for author in page.author %}
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+					<span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+					{%- if forloop.last == false %}, {% endif -%}
+				{% endfor %}
+			{%- endif -%}</p>
+		</header>
+
+		<div class="block" itemprop="articleBody">
+			<div class="content" itemprop="articleBody">
+				{{ content }}
+			</div>
+		</div>
+
+	{%- if site.disqus.shortname -%}
+		{%- include disqus_comments.html -%}
+	{%- endif -%}
+
+		<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+	</article>
+
+</div>

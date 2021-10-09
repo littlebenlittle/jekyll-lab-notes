@@ -1,0 +1,25 @@
+@import "../node_modules/bulma/sass/helpers/color.sass";
+$scheme-main: $black-ter;
+$text: $grey;
+$link: $purple;
+@import "../node_modules/bulma/bulma.sass";
+
+// h1 {
+	// color: $text;
+	// font-weight: $weight-semibold;
+	// font-size: $size-3;
+// }
+
+.posted-on-date {
+	font-size: 0.75rem;
+}
+
+.last-modified-date {
+	font-size: .825rem;
+	font-weight: $weight-semibold;
+}
+
+strong {
+	color: $grey-dark;
+	font-weight: $weight-bold;
+}
