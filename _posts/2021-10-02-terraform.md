@@ -2,8 +2,9 @@
 title: Terraform
 date: 2021-10-02
 modified: 2021-10-02
-layout: post
 ---
+
+# Terraform
 
 Terraform is a data definition language and tool for managing computational resources. It is often used to manage resources offered by **Infrastructure as a Service** providers using REST APIs.
 

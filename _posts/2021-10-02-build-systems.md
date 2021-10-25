@@ -2,8 +2,9 @@
 title: Build Systems
 date: 2021-09-22
 modified: 2021-10-02
-layout: post
----
+ ---
+
+# Build Systems
 
 ## Defining a Build System
 
