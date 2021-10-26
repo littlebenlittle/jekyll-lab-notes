@@ -2,6 +2,7 @@
 title: Kubernetes
 date: 2021-10-03
 modified: 2021-10-05
+layout: post
 ---
 
 # Kubernetes

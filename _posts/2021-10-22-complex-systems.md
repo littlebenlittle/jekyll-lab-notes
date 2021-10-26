@@ -2,6 +2,7 @@
 title: Complex Systems Verification
 date: 2021-10-22
 modified: 2021-10-22
+layout: post
 ---
 
 ## goals

@@ -2,6 +2,7 @@
 title: Petri Nets
 date: 2021-10-03
 modified: 2021-10-03
+layout: post
 ---
 
 # Petri Nets

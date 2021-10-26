@@ -1,14 +1,37 @@
 @import "../node_modules/bulma/sass/helpers/color.sass";
+
 $scheme-main: $black-ter;
+$code-background: $black;
 $text: $grey;
 $link: $purple;
-@import "../node_modules/bulma/bulma.sass";
 
-// h1 {
-	// color: $text;
-	// font-weight: $weight-semibold;
-	// font-size: $size-3;
-// }
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+
+@import "../node_modules/bulma/sass/base/_all.sass";
+
+// @import "../node_modules/bulma/sass/components/_all.sass";
+
+// @import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/other.sass";
+
+// @import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/helpers/visibility.sass";
+// @import "../node_modules/bulma/sass/helpers/float.sass";
+// @import "../node_modules/bulma/sass/helpers/other.sass";
+@import "../node_modules/bulma/sass/helpers/flexbox.sass";
+@import "../node_modules/bulma/sass/helpers/spacing.sass";
+// @import "../node_modules/bulma/sass/helpers/overflow.sass";
+// @import "../node_modules/bulma/sass/helpers/position.sass";
+@import "../node_modules/bulma/sass/helpers/typography.sass";
+
+// @import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+
+// @import "../node_modules/bulma/sass/layout/_all.sass";
 
 .posted-on-date {
 	font-size: 0.75rem;
@@ -22,4 +45,42 @@ $link: $purple;
 strong {
 	color: $grey-dark;
 	font-weight: $weight-bold;
+}
+
+.content h2 {
+	color: $text;
+	font-weight: $weight-semibold;
+}
+
+.content h3 {
+	color: $text;
+	font-weight: $weight-semibold;
+}
+
+.content h4 {
+	color: $text;
+	font-weight: $weight-semibold;
+}
+
+.content h5 {
+	color: $text;
+	font-weight: $weight-semibold;
+}
+
+.content h6 {
+	color: $text;
+	font-weight: $weight-semibold;
+}
+
+.card {
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	height: 100%;
+}
+
+.card .card-header-title {
+	font-size: 1.5rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }

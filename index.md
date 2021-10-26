@@ -3,7 +3,7 @@ title: Ben Little
 layout: home
 ---
 
-I am a master's student in computer science at CU Boulder.
+I am a master's student studying computer science at CU Boulder.
 
 My research interests include:
 

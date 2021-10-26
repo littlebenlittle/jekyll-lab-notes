@@ -2,6 +2,7 @@
 title: Terraform
 date: 2021-10-02
 modified: 2021-10-02
+layout: post
 ---
 
 # Terraform

@@ -2,6 +2,7 @@
 title: Graphical Calculus
 date: 2021-10-24
 modified: 2021-10-24
+layout: post
 ---
 
 ## Examples
