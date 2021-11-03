@@ -5,7 +5,16 @@ modified: 2021-10-24
 layout: post
 ---
 
-## Examples
+## Prior Work
+
+- scratch programming language
+- UML
+- [BPMN](https://www.bpmn.org/)
+- [Ballerina sequence diagrams](https://ballerina.io/learn/why-ballerina/graphical/)
+- [mingrammer](https://diagrams.mingrammer.com/)
+- [go diagrams](https://github.com/blushft/go-diagrams)
+- [Android Lifecycle Diagrams](https://github.com/xxv/android-lifecycle)
+- [Flowdroid](https://dl.acm.org/doi/10.1145/2666356.2594299)
 
 ### Unified Modeling Language
 
@@ -25,7 +34,9 @@ Types of diagrams:
 
 ### Concept Map ([Cmap](https://cmap.ihmc.us/))
 
+### [ZX-Calculus](https://zxcalculus.com/)
 
+[Original work](http://www.cs.ox.ac.uk/people/bob.coecke/GreenRed.pdf)
 
 ## Desirable Properties
 
