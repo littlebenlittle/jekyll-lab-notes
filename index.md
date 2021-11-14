@@ -7,7 +7,7 @@ I am a master's student studying computer science at CU Boulder.
 
 My research interests include:
 
-* Formal verification
+* Formal methods
 * Category theory
 * Systems engineering
 * Data accounting

@@ -54,3 +54,4 @@ exclude:
   - package-lock.json
   - scripts/
   - lab-notes*
+  - _drafts

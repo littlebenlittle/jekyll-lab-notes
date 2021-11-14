@@ -1,7 +1,10 @@
 @import "../node_modules/bulma/sass/helpers/color.sass";
 
 $scheme-main: $black-ter;
+$code: $grey-light;
 $code-background: $black;
+$pre: $grey-light;
+$pre-background: $black;
 $text: $grey;
 $link: $purple;
 
@@ -47,6 +50,10 @@ strong {
 	font-weight: $weight-bold;
 }
 
+.content {
+	font-size: $size-6;
+}
+
 .content h2 {
 	color: $text;
 	font-weight: $weight-semibold;
@@ -72,15 +79,41 @@ strong {
 	font-weight: $weight-semibold;
 }
 
+.content ol {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.content ul {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 .card {
 	border-radius: 0.5rem;
 	padding: 0.5rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
 	height: 100%;
 }
 
 .card .card-header-title {
-	font-size: 1.5rem;
+	font-size: $size-4;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+pre {
+	font-size: $size-6;
+	border-radius: 0.5rem;
+	margin: 1rem;
+}
+
+code {
+	border-radius: 0.5rem;
 }
