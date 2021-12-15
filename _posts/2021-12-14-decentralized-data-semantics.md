@@ -1,5 +1,5 @@
 ---
-title: Decentralized Bug Reporting
+title: Decentralized Data Semantics
 date: 2021-12-14
 modified: 2021-12-14
 layout: post
@@ -11,13 +11,13 @@ A federation of teams are working with the same set of library modules. For secu
 
 Some of the modules could be be buggy and therefore exhibit unexpected behavior. The teams need a way to disclose any observations of unexpected behaviors without revealing information about the modules or their configuration to those outside the federation.
 
-We propose a solution using Linked Open Data to publish bugs and security vulnerabilities in sensitive software libraries and their interactions. A subscription-based model similar in design to (ThreadDB | OrbitDB | PeerGOS) allows teams to share private information over an untrusted network.
+We propose a solution using Linked Open Data to publish bugs and security vulnerabilities in sensitive software libraries and their interactions. A subscription-based model similar in design to (ThreadDB, OrbitDB, PeerGOS) allows teams to share private information over an untrusted network.
 
 ### Attempt 2
 
 Modern package management tools rely on crash reports to identify bugs and repository mirrors to distribute patches. This process is weak to censorship, as centralized mirrors can be blocked on public networks at the ISP level.
 
-We propose a method for package maintainers to aggregate bug reports and publish patches using a peer-to-peer network stack. Peer devices can publish encrypted information about crashes and other unexpected behavior using a design similar to (ThreadDB | OrbitDB | PeerGOS). Package maintainers or other developers capable of fixing the bug can upload patches using the same system and link those patches to the bug reports as resolutions.
+We propose a method for package maintainers to aggregate bug reports and publish patches using a peer-to-peer network stack. Peer devices can publish encrypted information about crashes and other unexpected behavior using a design similar to (ThreadDB, OrbitDB, PeerGOS). Package maintainers or other developers capable of fixing the bug can upload patches using the same system and link those patches to the bug reports as resolutions.
 
 ### Attempt 3
 
