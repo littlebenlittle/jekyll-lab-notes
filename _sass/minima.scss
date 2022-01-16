@@ -1,3 +1,5 @@
+@charset "utf8";
+
 @import "../node_modules/bulma/sass/helpers/color.sass";
 
 $scheme-main: $black-ter;
@@ -7,9 +9,9 @@ $pre: $grey-light;
 $pre-background: $black;
 $text: $grey;
 $link: $purple;
+$primary: #b67701;
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
-
 @import "../node_modules/bulma/sass/base/_all.sass";
 
 // @import "../node_modules/bulma/sass/components/_all.sass";
@@ -52,6 +54,12 @@ strong {
 
 .content {
 	font-size: $size-6;
+}
+
+.content h1 {
+	color: $text;
+	font-weight: $weight-semibold;
+	color: $primary;
 }
 
 .content h2 {
@@ -130,4 +138,24 @@ code {
 
 .post {
 	padding: 0 2rem 0 2rem;
+}
+
+.profile-container figure img {
+	height: 100%;
+	width: auto;
+}
+
+div.content p.standout {
+	text-indent: 2.0rem;
+	font-style: italic;
+}
+
+div.content p.standout ::before {
+	content: "|";
+}
+
+ul.contact-info li::before {
+	content: "»";
+	font-weight: $weight-semibold;
+	padding-right: 0.5rem;
 }
