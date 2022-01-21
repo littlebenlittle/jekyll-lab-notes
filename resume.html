@@ -1,0 +1,150 @@
+---
+layout: default
+
+personal:
+  name: "Ben Little"
+  tagline: "Mathematician and Software Engineer"
+
+experience:
+  - title: Teaching Assistant
+    employer: University of Colorado Boulder
+    start_date: Aug 2021
+    end_date: present
+    points:
+    - Led recitation sections by introducing material and answering student questions
+    - Held routine student hours to meet with students outside of class
+    - Prepared course materials such as worksheets and homework problems
+    - Managed Course Assistant communication and questions
+  - title: Platform Engineer
+    employer: Aiva Health
+    start_date: Feb 2021
+    end_date: July 2021
+    points:
+    - Designed voice assistant interactions for healthcare settings
+    - Used custom domain specific language to create Amazon Voice Assistant apps
+    - Introduced team to test-driven development methods
+    - Traced errors using Google Stackdriver
+    tools:
+    - finite state automata
+    - hashicorp configuration lagnuage
+    - typescript
+  - title: Special Projects Engineer
+    employer: Fruition Growth
+    start_date: June 2018
+    end_date: Aug 2020
+    points:
+    - Deployed web applications using cloud hosting infrastructure
+    - Managed deployments using Kubernetes and Rancher
+    - Set up logging for deployments
+    tools:
+    - Linux
+    - Docker
+    - Kubernetes
+    - Rancher
+  - title: Research and Development Engineer
+    employer: Penn State
+    start_date: Sep 2015
+    end_date: July 2017
+    points:
+    - Assisted senior research scientist with natural/artificial intelligence research
+    - Mathematics consultant for agile development team
+    tools:
+    - Neural networks
+    - Vector calculus
+    - Java
+    - A* Search
+
+education:
+- institution: The Pennsylvania State University
+  degree: B.S. Mathematics
+  year: 2015
+---
+
+{% assign personal = page.personal %}
+{% assign experience = page.experience %}
+{% assign education = page.education %}
+
+<div id="resume" class="container">
+
+  <section id="personal" class="section">
+    <h1 class="is-size-1 has-text-weight-semibold">
+      {{ personal.name }}
+    </h1>
+    <p class="is-size-4 is-family-code">
+      {{ personal.tagline }}
+    </p>
+  </section>
+ 
+  <hr />
+
+  <section id="experience" class="section">
+    <h2 class="is-size-2 has-text-weight-semibold">
+      Experience
+    </h2>
+    <div class="mx-3">
+      <ul>
+      {% for job in experience -%}
+        <li class="m-3">
+          <h3 class="is-size-3 has-text-weight-semibold">
+            {{ job.title }}
+          </h3>
+
+          <div class="m-3 columns">
+            <div class="column is-three-quarters">
+              <div class="columns">
+                <div class="column">
+                  <p>{{ job.employer }}</p>
+                </div>
+                <div class="column">
+                  <p>{{ job.start_date }} - {{ job.end_date }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-3">
+            <ul class="bullet-list">
+            {% for pt in job.points -%}
+              <li class="emph">{{ pt }}</li>
+            {% endfor %}
+            </ul>
+          </div>
+
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="section">
+
+    <h2 class="is-size-2 has-text-weight-semibold">
+      Education
+    </h2>
+
+    <ul class="mx-3">
+    {% for edu in education -%}
+      <li class="m-3">
+        <h3 class="has-text-weight-semibold is-size-3">
+          {{ edu.degree }}
+        </h3>
+        <div class="m-3 columns">
+          <div class="column is-three-quarters">
+            <div class="columns">
+              <div class="column">
+                <p>{{ edu.institution }}</p>
+              </div>
+              <div class="column">
+                <p>{{ edu.year }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+
+</div>

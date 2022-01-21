@@ -154,8 +154,22 @@ div.content p.standout ::before {
 	content: "|";
 }
 
-ul.contact-info li::before {
+ul.bullet-list li::before {
 	content: "»";
 	font-weight: $weight-semibold;
 	padding-right: 0.5rem;
+}
+
+.bullet-item::before {
+	content: "»";
+	font-weight: $weight-semibold;
+	padding-right: 0.5rem;
+}
+
+#resume .section {
+	padding: $size-5;
+}
+
+#resume .emph {
+	font-style: italic;
 }

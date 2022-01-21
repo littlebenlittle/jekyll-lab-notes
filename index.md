@@ -9,18 +9,20 @@ contact_info:
   link: "https://matrix.to/#/@littlebenlittle:matrix.org"
 # - text: "PGP"
 #   link: "/pgp.asc"
-# documents:
-# - name: "Resume"
-#   link: "/resume.html"
+documents:
+- text: "Resume"
+  link: "/resume.html"
+# - text: "Services"
+#   link: "/services.html"
 ---
 
 I am a master's student studying computer science at CU Boulder.
 
 My research interests include:
 
-* Formal methods
-* Category theory
-* Systems engineering
+* Model-Driven Development
+* Program Synthesis
+* Quantum Computation
 * Data source attribution
 
 I am also passionate about:

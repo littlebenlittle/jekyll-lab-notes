@@ -52,4 +52,4 @@ exclude:
   - scripts/
   - lab-notes*
   - _drafts
-  - resume.md
+  - serve.sh
