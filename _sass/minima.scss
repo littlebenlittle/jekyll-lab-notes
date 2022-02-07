@@ -146,12 +146,16 @@ code {
 }
 
 div.content p.standout {
-	text-indent: 2.0rem;
+	padding-left: 1.5rem;
 	font-style: italic;
+	font-size: $size-5;
 }
 
-div.content p.standout ::before {
+div.content p.standout::before {
 	content: "|";
+	padding-right: 0.5rem;
+	font-weight: $weight-bold;
+	font-style: normal;
 }
 
 ul.bullet-list li::before {
