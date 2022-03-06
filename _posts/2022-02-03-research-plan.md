@@ -2,6 +2,8 @@
 title: Research Plan
 layout: post
 uuid: "c51ff716-84f9-11ec-9d1a-00163e5e6c00"
+date: 2022-02-03
+modified: 2022-02-21
 ---
 
 ### Prelude
@@ -20,9 +22,9 @@ So how *should* we think about the stories we tell ourselves, even formal ones? 
 
 So *what then* is the purpose of human in the loop? It certainly should not be the generation of formal models--automatic computers can do this much faster. Instead it should be on storytelling. Automatic computers and the programs they run are physical objects that exist in our universe. How should we tell each other stories about them?
 
-# The Plan as it Stands
+## The Plan as it Stands
 
-## Long Term Vision
+### Long Term Vision
 
 <p class="standout">
     Automatic generation of formal models and associated human-interpretable stories.
@@ -30,7 +32,7 @@ So *what then* is the purpose of human in the loop? It certainly should not be t
 
 Ultimately, we want the computer to do what it's good at--chunking through huge datasets 24 hours a day, 7 days a week. Searching for "useful" combinators in UTLC, inductive types in type theory, or collections of natural language paragraphs that describe a process. That leaves us humans to grant meaning to these useful discoveries and collectively decide which ones meet our needs and values.
 
-## Mid Term Vision
+### Mid Term Vision
 
 <p class="standout">
     Automatic translation of stories told in one formal domain to stories told in other formal domains.
@@ -40,7 +42,7 @@ There is no final language, except maybe Zen, that can describe the variety of f
 
 For formal languages, this automatic translation seems quite feasible. By describing the semantics of C and the semantics of Petri nets using *my own* preferred story--category theory--it is possible to define a mapping between the two, allowing one to "write C" in "Petri net". Translating stories into human prose is outside the scope of this effort, but translations into something like [Logical English](https://logicalenglish.logicalcontracts.com) seems feasible.
 
-## Semester Vision
+### Semester Vision
 
 <p class="standout">
     Generalization of the interval abstract domain in discrete memory to the boundary abstract domain in continuous memory.

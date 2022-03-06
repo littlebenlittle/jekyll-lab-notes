@@ -1,23 +1,20 @@
 ---
 layout: default
 ---
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign mdate = page.modified | date_to_xmlschema -%}
 <div class="container is-max-desktop">
 
 	<article class="post h-entry" itemscope itemtype="https://schema.org/NoteDigitalDocument">
 
 		<header class="post-header block">
-			<h1 class="is-size-3 has-text-weight-semibold" itemprop="name headline">
-				{{ page.title | escape }}
-			</h1>
 			<p class="post-meta">
-			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-			{%- assign mdate = page.modified | date_to_xmlschema -%}
-			<time class="last-modified-date" datetime="{{ mdate }}" itemprop="dateModified">
-			Last Modified: {{ mdate | date: date_format }}
-			</time>
-			<br/>
 			<time class="posted-on-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
 				Posted On: {{ page.date | date: date_format }}
+			</time>
+			<br/>
+			<time class="last-modified-date" datetime="{{ mdate }}" itemprop="dateModified">
+			Last Modified: {{ mdate | date: date_format }}
 			</time>
 			{%- if page.author -%}
 				• {% for author in page.author %}
@@ -26,6 +23,11 @@ layout: default
 					{%- if forloop.last == false %}, {% endif -%}
 				{% endfor %}
 			{%- endif -%}</p>
+			<div class="content">
+				<h1 class="is-size-3 has-text-weight-semibold is-co" itemprop="name headline">
+					{{ page.title | escape }}
+				</h1>
+			</div>
 		</header>
 
 		<div class="block" itemprop="articleBody">
