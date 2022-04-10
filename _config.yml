@@ -53,3 +53,4 @@ exclude:
   - lab-notes*
   - _drafts
   - serve.sh
+  - default.nix
